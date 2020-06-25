@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Jobs at JavaJam</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="javajam.css" rel="stylesheet">
+</head>
+
+
+<body>
+<div class="wrapper">
+	<header>
+	<h1>JavaJam Coffee House</h1>
+	</header>
+
+
+<nav>
+	<ul>
+		<li><a href="index.html">Home</a></li>
+		<li><a href="menu.html">Menu</a></li>
+		<li><a href="music.html">Music</a></li>
+		<li><a href="jobs.html">Jobs</a></li>
+	</ul>
+</nav>
+
+<main>
+
+<div class="heromugs"></div>
+
+<h2>Jobs at JavaJam</h2>
+
+	<p>Want to work at JavaJam? Fill out the form below to start your application.</p>
+	
+	<form  method="post" action="http://webdevbasics.net/scripts/javajam8.php">
+		<label for="name">Name:</label>
+		<input type="text" name="name">
+		<label for="email">Email:</label>
+		<input type="text" name="email">
+		<label for="exp">Experience:</label>
+		<textarea rows="2"	cols="20" name="exp"></textarea>
+		<input id="mySubmit" type="submit" value="Apply Now">
+	</form>
+<!-- The body was overlapping the footer on mobile and these breaks fixed it,
+I am not sure if I missed something in CSS or if it's my phone's resolution !-->
+<br> 
+<br>
+<br>
+<br>
+</main>
+
+<footer>
+	Copyright © 2019 JavaJam Coffee House<br>
+	<a href= "mailto:naomi@keller.com">naomi@keller.com</a>
+</footer>
+</div>
+</body>
+</html>

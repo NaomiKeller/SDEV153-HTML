@@ -1,0 +1,43 @@
+<html>
+<head>
+<script>
+
+// Program name: numberDoubler.html
+// Purpose: Call a function to double a number
+// Author: Paul Addison
+// Date last modified: 01-Sep-2011
+
+function double(num) {
+   // Declare variables
+   var result;                // result of doubling
+   var BR = "<br />";   // HTML line break
+
+   // Compute and display result, end function
+   result = num * 2;
+   document.write("Your number doubled is: " + result + BR);
+}
+
+</script>
+</head>
+
+<body>
+<script type="text/javascript">
+
+// Declare variables
+var someNum;         // number to double
+var BR = "<br />";   // HTML line break
+var ES = "";             // empty string for prompt
+
+// Welcome user, ask for number to double
+document.write("Welcome to the Number Doubler!" + BR);
+someNum = prompt("Enter the number to double:",ES);
+
+// Call function to double the number
+double(someNum);
+
+// Thank the user and end the program
+document.write("Thank you!" + BR);
+
+</script>
+</body>
+</html>

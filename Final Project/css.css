@@ -1,0 +1,417 @@
+/* hex color key / palette for my own sanity
+
+bright cyan: #04fcfe
+pale cyan: #a5feff
+grey: #333a44
+light grey: #39424f
+darker grey: #222830
+almost black: #0f0f0f
+
+*/
+
+header, nav, main, footer, .column2 { display: block;}
+* {box-sizing: border-box; }
+body { font-family: verdana, sans-serif; background-color: #333a44; margin: 0; height: 100%;}
+
+.wrapper { 
+background-color: #0f0f0f; 
+color: #000066;
+margin: auto;
+padding-left: 0px;
+} 
+
+header { 
+background-color: #333a44;
+background-image: url("images/header.jpg");
+color: #04fcfe;  
+padding: 13.5em 4em 2em 2em;
+background-repeat: repeat-x;
+height: 300px;
+background-position: 0% 50%;
+}
+
+
+
+main { 
+background-color: #292f38;
+color: #ffffff;
+font-family: Arial, sans-serif;
+
+}
+
+h1 { 
+display: none;
+}
+
+h2 { 
+color: #a5feff; 
+font-family: verdana, sans-serif;
+font-weight: bold;
+padding-bottom: .8em;
+border-bottom: 1px solid #a5feff;
+}
+
+footer {
+font-size:70%;
+text-align: center;
+padding: 10px;
+background-color: #000000;
+clear: both;
+color: #FFFFFF;
+font-style: italic;
+border-top: 1px solid #04fcfe;
+}
+
+
+footer a {
+	color: #a5feff;
+}
+
+/* Styles for content in main. */
+
+.column1 {
+overflow: hidden;
+float: left;
+max-width: 18em;
+padding: 1em 1.5em 10000px 1.5em;
+background-color: #0f0f0f;
+
+font-size: .9em;
+border-right: 1px solid #39424f; 
+margin-bottom: -10000px; /* trick I found to get the 2 columns the same height no matter
+how much content is in col2*/
+}
+
+.column1 a {
+	color: #a5feff;
+	text-decoration: none;
+	padding: .5em .8em .5em .8em;
+}
+
+.column1 a:hover {
+  background-color: #39424f;
+  color: white;
+  
+}
+
+.column2 {
+
+
+float:left;
+width: 75%;
+padding: 4em 3em 7em 9em;
+background-color: #292f38;
+
+
+}
+
+.column2 a {
+	text-decoration: none;
+	color: #a5feff;
+}
+
+.row {overflow: hidden; padding-bottom: 4em;}
+
+.row:after {
+	content: "";
+	display: table;
+	clear: both;
+}
+
+.box {
+	padding: 1.5em 5em 1em 5em;
+	border-bottom: 1px solid #39424f;
+	border-left: 1px solid #39424f;
+	border-right: 1px solid #39424f;
+	border-top: 1px solid #39424f;
+	box-shadow: 2px 2px #0f0f0f;
+	max-width: 70em;
+	height: auto;
+	background-color:#252b33;
+	overflow: auto;
+}
+
+/*getting a dropdown list in the nav took a lot more work than I anticipated*/
+
+
+.navbar {
+  overflow: hidden;
+  background-color: #0f0f0f;
+  border-top: 1px solid #04fcfe;
+  padding-left: 4em; padding-right: 4em;
+  
+}
+
+.navbar a {
+  float: right;
+  display: inline;
+  font-size: 16px;
+  color: white;
+  text-align: center;
+  padding: 1em 2em 1em 2em;
+  text-decoration: none;
+  letter-spacing:0.05em;
+  font-weight: bold;
+}
+
+.dropdown {
+  float:right;
+  overflow: hidden;
+  letter-spacing:0.05em;
+}
+
+.dropdown .dropbtn {
+  font-size: 16px;  
+  border: none;
+  outline: none;
+  color: white;
+  padding: 1em 2em 1em 2em;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+  font-weight: bold;
+  letter-spacing:0.05em;
+}
+
+.navbar a:hover, .dropdown:hover .dropbtn {
+  background-color: #04fcfe;
+  color: black;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #0f0f0f;
+  min-width: 3em;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  text-align:center;
+  letter-spacing:0.05em;
+}
+
+.dropdown-content a {
+  float: none;
+  color: white;
+  padding: 1em 2em 1em 2em;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {
+  background-color: #04fcfe;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+a:hover {color: #04fcfe}
+/* end of nav */
+
+h3 {
+	font-size: 1.5em;
+	border-top: 1px solid #04fcfe;
+	padding-top: 1em; 
+	font-family: verdana, sans-serif;
+}
+
+ul {padding-left: 1.5em;}
+
+ol {
+	padding-left: 1em;
+	list-style: none;
+}
+
+ol li{
+	padding-bottom: 1em
+}
+
+/* Video and images */
+
+.fill {
+	display: flex;
+	jusitfy-content: center;
+	align-items: center;
+	overflow: hidden;
+}
+
+.fill iframe {
+	
+	margin: auto;
+	border: 2px solid #39424f;
+	border-radius: 2px;
+}
+
+#centerimg {
+	margin: auto;
+	display: block;
+}
+
+
+figure img {
+	margin-left: 2em; margin-bottom: 1em;
+	float:right;
+	border: 2px solid #39424f;
+	border-radius: 2px;
+	max-height: 200px; max-width: 300px;
+}
+
+figure figcaption {
+	clear: right;
+	float:right;
+	text-align: center;
+	font-style: italic;
+	font-size: .8em; 
+	margin: 0em 1em 1em 1em
+}
+textarea {
+	width: 400px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+form {
+	width: 400px;
+	padding: 1em;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.table2 {
+	clear: all;
+	float:right;
+	text-align: left;
+	width: 60%;
+	border-spacing: 0;
+	background-color: #0f0f0f;
+    margin: 0em 2em 2em 2em;
+	border-bottom: 1px solid #39424f;
+	border-left: 1px solid #39424f;
+	border-right: 1px solid #39424f;
+	border-top: 1px solid #39424f;
+	font-size: 0.7em;
+}
+.table2 th {text-align: center;}
+table {
+
+	text-align: center;
+	width: 60%;
+	border-spacing: 0;
+	background-color: #0f0f0f;
+    margin: auto;
+
+}
+table td, th {
+	padding: 1em;
+
+}
+table th {text-align: right;}
+tr:nth-of-type(odd) {background-color: #262626}
+/* styling for mobile. tablets and phones using the same CSS, I think this looks good on both*/
+
+@media only screen and (max-width: 1024px) {
+	.column1 {display:none;} /*multiple columns do more harm than good on mobile*/
+	
+	
+	header {
+		background-image: url("images/header.jpg");
+		background-position: 0% 10%;
+		padding: 1em 1em 1em 1em;
+		height: 6em;
+		}
+	
+	
+	h1 {
+		display:inline;
+		font-family: verdana, sans-serif;
+		font-size: 1.6em;
+		color: #a5feff;
+		font-weight: 900;
+		 text-shadow: 2px 2px #000000;
+	}
+	
+	.navbar {
+	  overflow: hidden;
+	  background-color: #0f0f0f;
+	  border-top: 1px solid #04fcfe;
+	  padding-left: 0; padding-right: 0;
+		height: 3em;
+	}
+
+	.navbar a {
+	  float: right;
+	  display: inline;
+	  font-size: 1em;
+	  color: white;
+	  text-align: center;
+	  padding: 1em 0.5em 1em 0.5em;
+	  text-decoration: none;
+	  letter-spacing:0.05em;
+	  font-weight: bold;
+	}
+	
+	.dropdown .dropbtn {
+	  font-size: 1em;  
+	  border: none;
+	  outline: none;
+	  color: white;
+	  padding: 1em 0.5em 1em 0.5em;
+	  background-color: inherit;
+	  font-family: inherit;
+	  font-weight: bold;
+	  letter-spacing:0.05em;
+	}
+	
+	.dropdown-content {
+	  display: none;
+	  position: fixed;
+	  background-color: #0f0f0f;
+	  min-width: 1em;
+	  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+	
+	  text-align:center;
+	  letter-spacing:0.05em;
+	}
+	
+	.dropdown-content a {
+	  float: none;
+	  color: white;
+	  padding: 1em 1em ;
+	  text-decoration: none;
+	  display: block;
+	  text-align: left;
+	}
+	
+	.box {
+		padding: .7em 0.5em 0.7em 0.5em;
+		border-bottom: 2px solid #39424f;
+		border-left: 2px solid #39424f;
+		border-right: 2px solid #39424f;
+		border-top: 2px solid #39424f;
+		box-shadow: 1px 1px #0f0f0f;
+
+	}
+	
+	.column2 {
+		float:left;
+		width: 100%;
+		padding: 2em 0.3em 2em 0.3em;
+		background-color: #292f38;
+		height: 100%
+	}
+	
+	h2 {
+		font-size: 1.2em;
+	}
+	
+	#centerimg {
+		margin: auto;
+		display: block;
+		max-width: 60%;
+	}
+	
+	.table2 {font-size: .7em;}
+}
+

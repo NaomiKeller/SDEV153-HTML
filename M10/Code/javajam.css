@@ -1,0 +1,293 @@
+* {box-sizing: border-box; }
+header, nav, main, footer { display: block; }
+body {
+	color: #221811;
+	background-color: #FCEBB6;
+	font-family: Verdana,sans-serif;
+	background-image: url(images/background.gif);
+	background-repeat: repeat;
+	}
+nav {
+	text-align: center;
+	font-weight: bold;
+	font-size: 1.5em;
+	padding-top: 10px;
+	float: left;
+	width: 200px;
+	}
+nav a {text-decoration: none;}
+nav a:link {color: #FEF6C2;}
+nav a:visited {color: #D2B48C;}
+nav a:hover {color: #CC9933;}
+
+nav ul {
+	padding-left: 0px;
+	list-style: none;
+}
+
+h1 {
+	padding-top: 45px;
+	padding-left: 220px;
+	font-size: 3em;
+
+	}
+header {
+	height: 150px;
+	background-image: url(images/javajamlogo.jpg);
+	background-repeat: no-repeat;
+	background-color: #D2B48C;
+}
+footer {
+	padding-bottom: 10px;
+	font-size: 80%;
+	font-style: italic;
+	background-color: #D2B48C;
+	text-align: center;
+	border-top: 2px solid #221811;
+}
+.wrapper {
+	min-width: 900px;
+	max-width: 1280px;
+	margin-right: auto;
+	margin-left: auto;
+	background-color: #231814;
+	box-shadow: 4px 5px #221811;
+	
+}
+table {
+	text-align: center;
+	width: 90%;
+	border-spacing: 0;
+	background-color: #ffffcc;
+	margin: 2em 2em 2em 3em
+	/* margin wasn't in assignment but it wasn't properly spaced*/
+}
+table td, th {
+	padding: 10px;
+
+}
+tr:nth-of-type(odd) {background-color: #d2b48c;}
+main {
+	padding-left: 0px;
+	padding-bottom: 2em;
+	padding-right: 0px;
+	padding-top: 0px;
+	margin-left: 200px;
+	display: block;
+	background-color: #FEF6C2;
+}
+
+main h2 {
+	padding-left: 3em;
+	padding-right: 2em;
+}
+main h3 {
+	padding-left: 3em;
+	padding-right: 2em;
+}
+main h4 {
+	padding-left: 3em;
+	padding-right: 2em;
+}
+main p {
+	padding-left: 3em;
+	padding-right: 2em;
+}
+main div {
+	padding-left: 3em;
+	padding-right: 2em;
+}
+main ul {
+	padding-left: 3em;
+	padding-right: 2em;
+}
+main dl {
+	padding-left: 3em;
+	padding-right: 2em;
+}
+.details {
+	padding-left: 20%;
+	padding-right: 20%;
+	overflow: auto;
+	
+}
+img {
+	padding-left: 10px;
+	padding-right: 10px;
+}
+h4 {
+	background-color: #D2B48C;
+	font-size: 1.2em;
+	padding-left: 10px;
+	padding-bottom: 5px;
+	text-transform: uppercase;
+	border-bottom: solid;
+	padding-bottom: 0px;
+	clear: left;
+}
+.heroroad {
+	background-image: url(images/heroroad.jpg);
+	background-size: 100%;
+	height: 250px;
+	width: auto;
+}
+.heromugs {
+	background-image: url(images/heromugs.jpg);
+	background-size: 100%;
+	height: 250px;
+	width: auto;
+}
+.heroguitar {
+	background-image: url(images/heroguitar.jpg);
+	background-size: 100%;
+	height: 250px;
+	width: auto;
+}
+.floatleft {
+	float: left;
+	padding-left: 20px;
+	padding-right: 20px;
+	height: 70px;
+	min-width: 70px;
+}
+#mobile {display:none;}
+#desktop {display: inline;}
+form{
+	padding: 2em;
+}
+label {
+	float: left;
+	display: block;
+	text-align: right;
+	width: 8em;
+	padding-right: 1em;
+}
+input {
+	display: block;
+	margin-bottom: 1em;
+}
+textarea {
+	display: block;
+	margin-bottom: 1em;
+}
+#mySubmit {
+	margin-left: 9.5em;
+}
+textarea {
+	width: 400px;
+}
+@media only screen and (max-width: 1024px) {
+	body {
+		margin: 0;
+		background-image: none;
+	}
+	.wrapper {
+		min-width: 0;
+		margin: 0;
+		padding: 0;
+		box-shadow: none;
+	}
+	header {
+		border-bottom: 5px solid #FEF6C2;
+	}
+	h1 {
+		margin-top: 0;
+		margin-bottom: 1em;
+		padding-top: 1em;
+		padding-bottom: 1em;
+		font-size: 2em;
+	}
+	nav {
+		float: none;
+		width: auto;
+		padding-top: 0;
+		margin: 10px;
+		font-size: 1.3em;
+	}
+	nav li {
+		display: inline-block;
+	}
+	nav a {
+		padding: 1em;
+		width: 8em;
+		font-weight: bold;
+		border-style: none;
+	}
+	nav ul {
+		padding: 0;
+		margin: 0;
+	}
+	.heroroad {
+		margin: 0;
+		padding: 0;
+	}
+	.heromugs {
+		margin: 0;
+		padding: 0;
+	}
+	.heroguitar {
+		margin: 0;
+		padding: 0;
+	}
+	main {
+		padding: 0;
+		margin: 0;
+		font-size: 90%;
+	}
+}
+
+@media only screen and (max-width: 768px) {
+	header {
+		background-image: url(images/javajammini.jpg);
+		height: 128px;
+	}
+	h1 {
+		font-size: 2em;
+		text-align: center;
+		padding-left: 0;
+	}
+	nav {
+		margin: 0;
+	}
+	nav a {
+		display: block;
+		padding: 0.2em;
+		width: auto;
+		border-bottom: 1px solid #FEF6C2;
+	}
+	nav li {
+		display: block;
+	}
+	main {
+		padding-top: 1px;
+	}
+	h2 {
+		padding-top: 0.5em;
+		padding-right: 0;
+		padding-bottom: 0;
+		padding-left: 0.5em;
+		margin-right: 0.5em;
+	}
+	details {
+		padding-left: 0;
+		padding-right: 0;
+	}
+	.heroroad {
+		background-image: none;
+		height: auto;
+	}
+	.heromugs {
+		background-image: none;
+		height: auto;
+	}
+	.heroguitar {
+		background-image: none;
+		height: auto;
+	}
+	.floatleft {
+		padding-left: 0.5em;
+		padding-right: 0.5em;
+	}
+	#mobile {display: inline;}
+	#desktop {display: none;}
+}

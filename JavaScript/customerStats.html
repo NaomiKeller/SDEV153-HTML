@@ -1,0 +1,45 @@
+<html>
+<body>
+<script type="text/javascript">
+
+// Program name: customerStats.html
+// Purpose: Compute total and average customers over 4 hours
+// Author: Paul Addison
+// Date last modified: 01-Sep-2011
+
+// Variables and constants
+var totCust;                 // total customers
+var avgCust;                // average customers per hour
+var count1, count2, count3, count4;
+                                    // count of customers each hour
+var NUM_HOURS = 4.0;   // number of hours
+var BR = "<br />";        // HTML line break tag
+var ES = "";                  // empty string
+
+// Program heading
+document.write("Sunshine Books Statistics Program" + BR);
+
+// Get number of customers for each hour
+count1 = prompt("Enter # of customers for Hour 1:",ES);
+count1 = parseInt(count1);
+count2 = prompt("Enter # of customers for Hour 2:",ES);
+count2 = parseInt(count2);
+count3 = prompt("Enter # of customers for Hour 3:",ES);
+count3 = parseInt(count3);
+count4 = prompt("Enter # of customers for Hour 4:",ES);
+count4 = parseInt(count4);
+
+// Compute total and average, and display results
+totCust = count1 + count2 + count3 + count4
+avgCust = totCust / NUM_HOURS
+document.write("Total # of customers: " + totCust + BR);
+document.write("Average customers/hour: " + avgCust + BR);
+
+// Thank the user and end the program
+document.write("Thank you for using this program!" + BR);
+
+</script>
+</body>
+</html>
+
+

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>JavaScript Practice</title>
+<meta charset="utf-8">
+<style>
+input { display: block;
+margin-bottom: 1em;
+}
+label { float: left;
+width: 5em;
+padding-right: 1em;
+text-align: right;
+}
+#submit { margin-left: 7em; }
+</style>
+</head>
+<body>
+<h1>JavaScript Form Handling</h1>
+<form method="post"
+action="http://webdevbasics.net/scripts/demo.php"
+onsubmit="return validateForm();">
+<label for="userName">Name: </label>
+<input type="text" name="userName" id="userName">
+<label for="userAge">Age: </label>
+<input type="text" name="userAge" id="userAge">
+<input type="submit" value="Send information" id="submit">
+</form>
+</body>
+</html>
+Save the file
